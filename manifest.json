@@ -1,11 +1,10 @@
 {
-    "manifest_version": 3,
-    "name": "BOJ Workbook Copy Paste Pro",
-    "version": "1.0",
-    "description": "This Chrome extension lets you copy Problems from a Baekjoon Online Judge Workbook/Set, and easily paste it to a new Workbook/Set.",
-    "action": {
-      "default_popup": "popup.html"
-    },
-    "permissions": ["activeTab", "storage", "scripting"]
-  }
-  
+  "manifest_version": 3,
+  "name": "BOJ Workbook Copy Paste Pro",
+  "version": "1.0",
+  "description": "This Chrome extension lets you copy Problems from a Baekjoon Online Judge Workbook/Set, and easily paste it to a new Workbook/Set.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab", "storage", "scripting"]
+}

@@ -29,36 +29,44 @@ document.getElementById('showDataButton').addEventListener('click', function() {
 
 
 function scrapeData() {
-  // 두 형태의 테이블을 대상으로 쿼리
-  let rows1 = document.querySelectorAll("body > div.wrapper > div.container.content > div > div:nth-child(5) > div > table > tbody > tr");
-  let rows2 = document.querySelectorAll("body > div.wrapper > div.container.content > div > div.col-md-2 > ul:nth-child(1) > li > a");
-
   let data = [];
-
+  
   // 첫 번째 형태의 테이블에서 문제 번호 추출
-  for(let i = 0; i < rows1.length; i++) {
-    let cell = rows1[i].querySelector("td:nth-child(1)");
-    if(cell) {
-      data.push(cell.innerText.trim());
-    }
-  }
+  let divs = document.querySelectorAll("body > div.wrapper > div.container.content > div.row > div");
+  
+  divs.forEach((div, i) => {
+      let header = div.querySelector("div > table > thead > tr > th:nth-child(1)");
+      
+      if (header && (header.innerText === "문제" || header.innerText === "Problem")) {
+          let rows = div.querySelectorAll("div > table > tbody > tr");
+          
+          rows.forEach(row => {
+              let cell = row.querySelector("td:nth-child(1)");
+              if (cell) {
+                  data.push(cell.innerText.trim());
+              }
+          });
+      }
+  });
 
-  // 두 번째 형태의 테이블에서 문제 번호 추출
+  // 두 번째 형태의 테이블에서 문제 번호 추출 (기존 방식 그대로 유지)
+  let rows2 = document.querySelectorAll("body > div.wrapper > div.container.content > div > div.col-md-2 > ul:nth-child(1) > li > a");
   for(let i = 0; i < rows2.length; i++) {
-    let href = rows2[i].getAttribute("href");
-    if(href && href.startsWith("/problem/")) {
-      let problemNumber = href.split("/")[2];
-      data.push(problemNumber);
-    }
+      let href = rows2[i].getAttribute("href");
+      if(href && href.startsWith("/problem/")) {
+          let problemNumber = href.split("/")[2];
+          data.push(problemNumber);
+      }
   }
 
   if (data.length === 0) {
-    // 에러 메시지 표시
-    alert("Goto Workbook/Set Page\n문제집/연습 화면으로 가주세요");
+      // 에러 메시지 표시
+      alert("Goto Workbook/Set Page\n문제집/연습 화면으로 가주세요");
   }
 
   return data.join('\n');
 }
+
 
 document.getElementById('pasteButton').addEventListener('click', function() {
   chrome.storage.local.get('tableData', function(data) {
