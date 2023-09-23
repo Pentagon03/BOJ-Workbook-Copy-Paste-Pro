@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "BOJ Set Copy Paste Pro",
+    "version": "1.0",
+    "description": "This Chrome extension lets you copy Problems from a Baekjoon Online Judge Set, and easily paste it to a new Set.",
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "permissions": ["activeTab", "storage", "scripting"]
+  }
+  
