@@ -1,5 +1,5 @@
-# BOJ-Set-Copy-Paste-Pro
-This Chrome extension lets you copy Problems from a Baekjoon Online Judge Set, and easily paste it to a new Set.
+# BOJ Workbook Copy Paste Pro
+This Chrome extension lets you copy Problems from a Baekjoon Online Judge Workbook/Set, and easily paste it to a new Workbook/Set.
 
 ### Installation
 **Google Chrome**
