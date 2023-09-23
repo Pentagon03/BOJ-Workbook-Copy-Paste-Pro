@@ -2,7 +2,7 @@
 This Chrome extension lets you copy Problems from a Baekjoon Online Judge Workbook/Set, and easily paste it to a new Workbook/Set.
 
 ### Demo Video
-(WIP)
+[![Watch the video](https://img.youtube.com/vi/Qb4JNVq9BWA/default.jpg)](https://youtu.be/Qb4JNVq9BWA)
 
 ### Installation
 **Google Chrome**
