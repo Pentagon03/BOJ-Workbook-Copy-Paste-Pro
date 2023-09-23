@@ -54,7 +54,7 @@ function scrapeData() {
 
   if (data.length === 0) {
     // 에러 메시지 표시
-    alert("문제집/연습 화면으로 가주세요");
+    alert("Goto Workbook/Set Page\n문제집/연습 화면으로 가주세요");
   }
 
   return data.join('\n');
@@ -130,8 +130,6 @@ function pasteAndSubmit(problem) {
     
     input.dispatchEvent(enterEvent);
   } else {
-    alert("문제집/연습 만들기 화면으로 가주세요");  // 에러 메시지 표시
+    alert("Goto Workbook/Set Generating Page\n문제집/연습 만들기 화면으로 가주세요");  // 에러 메시지 표시
   }
 }
-
-
