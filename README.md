@@ -22,3 +22,5 @@ This Chrome extension lets you copy Problems from a Baekjoon Online Judge Workbo
 4. Press "Problems" to check whether Copy Process worked well.
 5. Go to any Workbook / Set Generation Tab that you wanna Paste.
 6. Press "Paste". You are all done.
+
+Inspired by https://www.acmicpc.net/board/view/108210
