@@ -1,7 +1,6 @@
 # BOJ-Set-Copy-Paste-Pro
 This Chrome extension lets you copy Problems from a Baekjoon Online Judge Set, and easily paste it to a new Set.
 
-###### (Installation Steps Written using [this Template](https://github.com/iamadamdev/bypass-paywalls-chrome#installation-instructions)
 ### Installation
 **Google Chrome**
 1. Download the ZIP file from [latest Release](https://github.com/Pentagon03/BOJ-Set-Copy-Paste-Pro/releases/tag/Chrome).
@@ -10,3 +9,16 @@ This Chrome extension lets you copy Problems from a Baekjoon Online Judge Set, a
 4. In Chrome, go to the extensions page (`chrome://extensions`)
 5. Enable Developer Mode.
 6. Drag the `BOJ-Set-Copy-Paste-Pro-main` folder anywhere on the page to import it.
+
+###### (Installation Steps Written using [this Template](https://github.com/iamadamdev/bypass-paywalls-chrome#installation-instructions)
+
+### How to Use
+1. Go to any Workbook / Set Tab that you want to Copy.
+2. Press Extension Button. (Recommend to pin it on the top)
+3. Press "Copy".
+4. Press "Problems" to check whether Copy worked well.
+5. Go to any Workbook / Set Generation Tab that you wanna Paste.
+6. Press "Paste". You are all done.
+
+### Demo Video
+(WIP)
