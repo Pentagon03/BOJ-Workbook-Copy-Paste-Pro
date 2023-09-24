@@ -1,5 +1,8 @@
 name: Upload release
-on: release
+on:
+  release:
+    types:
+        - created
 
 jobs:
   upload-release:
