@@ -13,6 +13,8 @@ jobs:
       - name: Remove video
         run: |
           rm -r DemoVideo
+          rm -r .github
+          rm -r .git
           tar -zcvf ../BOJ-Workbook-Copy-Paste-Pro-release.tar.gz .
 
       - name: Upload release
