@@ -1,0 +1,23 @@
+name: Upload release
+on: release
+
+jobs:
+  upload-release:
+    name: Upload release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Remove video
+        run: |
+          rm -r DemoVideo
+          tar -zcvf ../BOJ-Workbook-Copy-Paste-Pro-release.tar.gz .
+
+      - name: Upload release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: ../BOJ-Workbook-Copy-Paste-Pro-release.tar.gz
+          tag: ${{ github.ref }}
