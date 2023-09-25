@@ -6,6 +6,7 @@ on:
 
 jobs:
   upload-release:
+    permissions: write-all
     name: Upload release
     runs-on: ubuntu-latest
 
