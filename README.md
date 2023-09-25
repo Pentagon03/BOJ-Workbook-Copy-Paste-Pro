@@ -6,7 +6,7 @@ This Chrome extension lets you copy Problems from a Baekjoon Online Judge Workbo
 
 ### Installation
 **Google Chrome**
-1. Download the `.tar.gz` file from [latest Release](https://github.com/Chemical118/BOJ-Workbook-Copy-Paste-Pro/releases/latest/download/BOJ-Workbook-Copy-Paste-Pro-release.tar.gz).
+1. Download the `.zip` file from [latest Release](https://github.com/Pentagon03/BOJ-Workbook-Copy-Paste-Pro/releases/latest/download/BOJ-Workbook-Copy-Paste-Pro-release.zip).
 2. Decompress the file and you should have a folder named `BOJ-Workbook-Copy-Paste-Pro-main-release`.
 3. Put the folder in a safe location like your Documents Folder.
 4. In Chrome, go to the extensions page (`chrome://extensions`)

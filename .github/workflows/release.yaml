@@ -18,11 +18,11 @@ jobs:
           rm -r DemoVideo
           rm -r .github
           rm -r .git
-          tar -zcvf ../BOJ-Workbook-Copy-Paste-Pro-release.tar.gz .
+          zip -rj ../BOJ-Workbook-Copy-Paste-Pro-release.zip ./*
 
       - name: Upload release
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: ../BOJ-Workbook-Copy-Paste-Pro-release.tar.gz
+          file: ../BOJ-Workbook-Copy-Paste-Pro-release.zip
           tag: ${{ github.ref }}
